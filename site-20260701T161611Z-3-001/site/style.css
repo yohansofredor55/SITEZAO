@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{margin: 0; padding: 0;}
+
+:root{
+    --escuro-cinema:#0b0b0d;
+
+    --fundo-card: #1e1e24;
+
+    --laranja: #ff4500;
+
+    --brilho:#ffcc00;
+
+    --azul:#03337c;
+
+
+}
+
+
+body{
+    background-image: url(./imagens/portal\ verde.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+}
+
+body.home{
+    background-image: url("./imagens/cyberpunk laranja.gif");
+}
+
+button{
+    background-color: var(--brilho);
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 10px;
+    font-family: 'bangers', cursive;
+    letter-spacing: 2px;
+}
+button:hover{
+    transform: translateY(-5px);
+    transition: all 0.5s ease;
+    border-color: aliceblue;
+    box-shadow: 0 12px 25px var(--brilho);
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+    background-color: rgba(30,30,36,0.55);
+    padding: 20px;
+    text-align: center;
+    font-style: bangers;
+    box-shadow: 0px 4px 10px 0px var(--brilho);
+    z-index: 1000;
+}
+
+.link{
+    font-family: 'bangers', cursive;
+    text-decoration: none;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin: 0 15px;
+    color: #ffcc00;
+}
+.link:hover{
+    color:#00ff40;
+}
+
+.vitrine{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    padding: 60px;
+    margin: 0 auto;
+}
+
+.personagem{
+    border: 3px solid var(--brilho);
+    border-radius: 12px;
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: rgb(29, 61, 90);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 650px;
+    
+}
+.personagem:hover{
+    transform: translateY(-15px);
+    transition: all 0.5s ease;
+    border-color: aliceblue;
+    box-shadow: 0 12px 25px var(--brilho);
+}
+
+
+.foto_personagem{
+    border: 3px solid var(--brilho);
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+    border-radius: 12px;
+}
+.personagem:hover .foto_personagem{
+    border-color: aliceblue;
+    
+}
+
+.nome_personagem{
+    font-family: 'bangers', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--brilho);
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+
+/* =============================================================================================================================== */
+
+
+.guerreiro{
+    color: var(--brilho);
+    font-family: 'bangers', cursive;
+    font-size: 5rem;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+.apresentacao{
+    font-family: 'roboto';
+    font-size: 1.8rem;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+.balao{
+    font-family: 'roboto';
+    font-size: 1.8rem;
+    color: aliceblue;
+    text-align: center;
+    transform: translateY(50%);
+}
+
+.guerr-head{
+position: relative;
+height: 100vh;
+display: flex;
+justify-content: space-between;
+background-color: rgba(0, 0, 0, 0.25);
+}
+
+.esquerdo, .direito{
+max-height: 400px;
+width: 100%;
+max-width: 350px;
+padding: 10px;
+font-family: 'bangers', cursive;
+letter-spacing: 2px;
+}
+
+.front{
+position: absolute;
+height: 100%;
+transform: translateX(-50%);
+left: 50%;
+filter: drop-shadow(0 0 10px var(--brilho));
+}
+
+.foto{
+    height: 850px;
+}
+
+/*===========================================================================================================================================================*/
+.container-chat{
+    max-width: 550px;
+    margin: 20px auto;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fundo-card);
+    border-radius: 11px;
+    
+    overflow: hidden;
+}
+.janela-msg{
+    flex: 1;
+    padding: 20px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+.mensagem{
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: center;
+}
+.mensagem.usuario{
+    background-color: black;
+    color: aliceblue;
+    align-self: flex-end;
+}
+.formulario-envio{
+    display: flex;
+    padding: 15px;
+    background-color: var(--fundo-card);
+    gap: 10px;
+}
+
+input{
+    background-color: var(--brilho);
+    color: aliceblue;
+    width: 500px;
+}
+input:hover{
+    border-color: aliceblue;
+    box-shadow: 0 6px 15px var(--brilho)(0, 204, 255, 0.5);
+}
